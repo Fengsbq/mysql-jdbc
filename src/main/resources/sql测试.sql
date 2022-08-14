@@ -1,0 +1,3 @@
+-- 测试sql语句
+-- 创建本地仓库 vcs - create git repository
+-- 选择工程文件夹创建本地仓库
