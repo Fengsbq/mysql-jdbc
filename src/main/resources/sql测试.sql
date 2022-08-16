@@ -80,3 +80,28 @@ insert into tb6 values(60, 'F');
 insert into tb6 values(61, 'F');
 insert into tb6 valuse(50, 'C');
 
+use hr;
+
+select * from employees;
+
+select employee_id,first_name,salary
+from employees
+where employee_id=120;
+
+
+select count(*) from user;
+
+
+-- 每个部门的人数
+select department_id, count(*)
+from employees
+group by department_id;
+
+select  extract(year from hire_date) year, count(*)
+from employees
+group by year;
+
+select  department_id, count(*) c
+from employees
+group by department_id
+having c=1;
